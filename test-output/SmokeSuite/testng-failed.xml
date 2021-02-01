@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]">
+  <listeners>
+    <listener class-name="demolisten.DemoListen"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTest(failed)">
+    <classes>
+      <class name="demolisten.Demo">
+        <methods>
+          <include name="testD"/>
+          <include name="testC"/>
+        </methods>
+      </class> <!-- demolisten.Demo -->
+      <class name="listen.DemoA">
+        <methods>
+          <include name="TestB"/>
+        </methods>
+      </class> <!-- listen.DemoA -->
+      <class name="demolisten.Demo1">
+        <methods>
+          <include name="testC1"/>
+          <include name="TestB1"/>
+          <include name="testD1"/>
+        </methods>
+      </class> <!-- demolisten.Demo1 -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->

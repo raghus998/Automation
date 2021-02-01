@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite">
+<listeners>
+<listener class-name="demolisten.DemoListen"></listener>
+</listeners>
+  <test thread-count="5" name="SmokeTest">
+    <classes>
+      <class name="demolisten.Demo1"/>
+      <class name="demolisten.Demo"/>
+      <class name="listen.DemoA"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

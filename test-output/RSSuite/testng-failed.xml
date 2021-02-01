@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RSSuite]">
+  <listeners>
+    <listener class-name="demolisten.DemoListen"/>
+  </listeners>
+  <test thread-count="5" name="RSTest(failed)">
+    <classes>
+      <class name="demolisten.Demo">
+        <methods>
+          <include name="testD"/>
+          <include name="testC"/>
+        </methods>
+      </class> <!-- demolisten.Demo -->
+      <class name="demolisten.Demo1">
+        <methods>
+          <include name="testC1"/>
+          <include name="TestB1"/>
+          <include name="testD1"/>
+        </methods>
+      </class> <!-- demolisten.Demo1 -->
+    </classes>
+  </test> <!-- RSTest(failed) -->
+</suite> <!-- Failed suite [RSSuite] -->
